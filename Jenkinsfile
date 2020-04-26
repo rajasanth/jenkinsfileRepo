@@ -3,6 +3,7 @@ node {
    checkout scm 
    config('globalconfig.yml') {
         //println "Success"
-         mavenBuild()
+    def status = mavenBuild()
+    println "${status}"
    }
 }
