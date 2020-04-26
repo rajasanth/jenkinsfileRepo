@@ -2,6 +2,7 @@
 node {
    checkout scm 
    config('globalconfig.yml') {
-        println "Success"
+        //println "Success"
+         mavenBuild()
    }
 }
